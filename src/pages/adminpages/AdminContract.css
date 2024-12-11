@@ -1,0 +1,80 @@
+/* 테이블 스타일 */
+.contract-table {
+    width: 100%; /* 테이블의 너비를 100%로 설정 */
+    border-collapse: collapse; /* 테이블 셀의 경계가 겹치지 않도록 설정 */
+}
+
+/* 테이블의 헤더 셀과 데이터 셀 스타일 */
+.contract-table th,
+.contract-table td {
+    padding: 10px; /* 셀의 안쪽 여백 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 테이블 헤더의 스타일 */
+.contract-table th {
+    background-color: #11c5ad65; /* 헤더의 배경색을 밝은 청록색으로 설정 */
+    color: white; /* 헤더 텍스트 색을 흰색으로 설정 */
+}
+
+/* 테이블 행 스타일 */
+.contract-table tr {
+    border-bottom: 1px solid #ddd; /* 각 행 아래에 얇은 회색 선 추가 */
+}
+
+/* 상태별 스타일 */
+.contract-active {
+    color: green; /* 활성 상태일 때 텍스트 색을 녹색으로 설정 */
+    font-weight: bold; /* 글자를 굵게 설정 */
+}
+
+.contract-expired {
+    color: red; /* 만료된 상태일 때 텍스트 색을 빨간색으로 설정 */
+    font-weight: bold; /* 글자를 굵게 설정 */
+}
+
+.contract-default {
+    color: gray; /* 기본 상태일 때 텍스트 색을 회색으로 설정 */
+}
+
+/* 페이지네이션 스타일 */
+.contract-pagination {
+    display: flex; /* 페이지네이션 버튼들을 가로로 정렬 */
+    justify-content: center; /* 버튼들을 중앙 정렬 */
+    margin-top: 20px; /* 페이지네이션 위쪽에 여백 추가 */
+}
+
+/* 페이지네이션 버튼 스타일 */
+.contract-pagination button {
+    margin: 0 5px; /* 버튼 간 간격 설정 */
+    padding: 10px; /* 버튼 안쪽 여백 설정 */
+    border: 1px solid #ccc; /* 버튼 테두리 설정 */
+    border-radius: 5px; /* 버튼 모서리를 둥글게 설정 */
+    background-color: #f9f9f9; /* 버튼 배경색을 연한 회색으로 설정 */
+    color: #333; /* 버튼 텍스트 색을 어두운 회색으로 설정 */
+    font-size: 14px; /* 버튼 글자 크기 설정 */
+    cursor: pointer; /* 버튼 위에 마우스를 올리면 클릭할 수 있다는 느낌을 줌 */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 버튼 배경색과 텍스트 색의 전환 효과 설정 */
+}
+
+/* 페이지네이션 버튼에 마우스를 올렸을 때 스타일 */
+.contract-pagination button:hover {
+    background-color: #ddd; /* 배경색을 회색으로 변경 */
+    color: #000; /* 텍스트 색을 검정색으로 변경 */
+}
+
+/* 활성화된 페이지네이션 버튼 스타일 */
+.contract-pagination .active {
+    background-color: #4CAF50; /* 활성화된 버튼 배경색을 녹색으로 설정 */
+    color: white; /* 활성화된 버튼 텍스트 색을 흰색으로 설정 */
+    font-weight: bold; /* 활성화된 버튼 글자 굵게 설정 */
+    border: 1px solid #4CAF50; /* 버튼 테두리 색을 녹색으로 설정 */
+}
+
+/* 반응형 디자인: 화면 너비가 600px 이하일 때 페이지네이션 버튼 크기 조정 */
+@media (max-width: 600px) {
+    .contract-pagination button {
+        padding: 8px; /* 버튼 안쪽 여백을 줄여서 크기를 작게 설정 */
+        font-size: 12px; /* 버튼 글자 크기 줄이기 */
+    }
+}

@@ -1,0 +1,88 @@
+/* 폰트 저장 */
+/*  */
+@font-face {
+  font-family: 'SCDream5';
+  src: url('../assets/fonts/SCDream5.otf') format('truetype');
+}
+
+/* src/components/ManagerSidebar.css */
+.manager-sidebar {
+  font-family: 'SCDream5', sans-serif;
+  width: 200px;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.manager-sidebar ul {
+  color: #333;
+  list-style-type: none;
+  padding: 0;
+  flex-grow: 1; /* 메뉴 항목들이 남는 공간을 차지하도록 */
+  display: flex;
+  flex-direction: column;
+}
+
+.manager-sidebar li {
+  margin: 10px 0;
+}
+
+.manager-sidebar a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar-logo {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* 로그아웃 버튼 */
+.logout-button {
+  font-family: 'SCDream5', sans-serif;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.logout-button:hover {
+  background-color: #c9302c;
+}
+
+/* 12.4 추가 css */
+
+.manager-sidebar li.active a {
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+  background-color: #ffbe48;
+  border-radius: 5px; 
+  padding: 8px 30px 8px 8px;
+  z-index: 1;
+}
+
+/* 알림 배지 스타일 */
+.notice-badge {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff3333;
+  font-weight: bold;
+  font-size: 20px;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}

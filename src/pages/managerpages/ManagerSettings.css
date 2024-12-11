@@ -1,0 +1,80 @@
+/* PaymentHistory 컴포넌트 스타일 */
+.payment-history-container {
+    font-family: Arial, sans-serif; /* 기본 폰트 설정 */
+    padding: 20px; /* 내부 여백 */
+    background-color: #f9f9f9; /* 배경 색상 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.payment-history-container .ffffffffff{
+    font-size: 32px;
+    font-weight: bold; 
+    color: #333; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+.date-range{
+    font-size: 20px; /* 텍스트 크기 */
+    font-weight: bold; /* 굵은 글씨 */
+}
+
+/* 테이블 스타일 */
+.payment-history-container table {
+    width: 100%; /* 테이블 너비 */
+    border-collapse: collapse; /* 테이블 경계선 겹침 방지 */
+    margin-top: 20px; /* 위쪽 여백 */
+    border: 1px solid #ddd; /* 테이블 경계선 */
+}
+
+.payment-history-container th, 
+.payment-history-container td {
+    padding: 12px; /* 셀 내부 여백 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    border: 1px solid #ddd; /* 셀 경계선 */
+}
+
+.payment-history-container th {
+    background-color: #f0f0f0; /* 헤더 배경 색상 */
+    font-weight: bold; /* 헤더 글씨 굵게 */
+    color: #555; /* 헤더 텍스트 색상 */
+}
+
+.payment-history-container td {
+    background-color: #fff; /* 내용 배경 색상 */
+    color: #333; /* 내용 텍스트 색상 */
+}
+
+/* 페이지네이션 스타일 */
+.payment-history-container .pagination {
+    display: flex; /* 플렉스박스 사용 */
+    justify-content: center; /* 가운데 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-top: 20px; /* 위쪽 여백 */
+}
+
+.payment-history-container .pagination button {
+    background-color: #007bff; /* 버튼 배경 색상 */
+    color: white; /* 버튼 텍스트 색상 */
+    border: none; /* 경계선 없음 */
+    padding: 10px 20px; /* 버튼 여백 */
+    margin: 0 10px; /* 버튼 사이 여백 */
+    font-size: 16px; /* 글씨 크기 */
+    cursor: pointer; /* 마우스 포인터 변경 */
+    border-radius: 5px; /* 둥근 버튼 */
+    transition: background-color 0.0s ease; /* 배경 색상 변화 애니메이션 */
+}
+
+.payment-history-container .pagination button:hover {
+    background-color: #0056b3; /* hover 시 배경 색상 */
+}
+
+.payment-history-container .pagination button:disabled {
+    background-color: #ccc; /* 비활성화된 버튼 배경 색상 */
+    cursor: not-allowed; /* 마우스 포인터 비활성화 */
+}
+
+.payment-history-container .pagination span {
+    font-size: 16px; /* 페이지 번호 글씨 크기 */
+    color: #333; /* 페이지 번호 텍스트 색상 */
+}

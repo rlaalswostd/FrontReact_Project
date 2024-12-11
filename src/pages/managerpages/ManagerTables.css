@@ -1,0 +1,92 @@
+/* 폰트 저장 */
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'modalfont';
+    src: url('../../assets/fonts/modalfont.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'managerordersfont';
+    src: url('../../assets/fonts/managerordersfont.otf') format('truetype');
+}
+
+.manager-tables-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.mt-header{
+    font-family: 'managerordersfont';
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mt-form{
+    font-family: 'managerordersfont';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #dcf8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mt-form-group{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.mt-label{
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.mt-input{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.mt-input2{
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.mt-button{
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mt-message{
+    font-family: 'KCC-Hanbit' !important;
+    font-size: 30px;
+}

@@ -1,0 +1,247 @@
+/* 폰트 저장 */
+@font-face {
+    font-family: 'loginfont';
+    src: url('../assets/fonts/loginfont.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'initalloginfont';
+    src: url('../assets/fonts/initalloginfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'storeselect';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 로고 이미지 */
+.login-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 60%;
+    height: 60%;
+}
+
+/* 공통 스타일 */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* initialLogin 테마 */
+.first-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.login-up {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.login-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button-admin,
+.login-button-manager {
+    font-family: 'initalloginfont', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 120px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    font-size: 35px;
+}
+
+.login-button-admin {
+    background-color: #2e3b45;
+}
+
+.login-button-manager {
+    background-color: #fff9f1;
+    color: black;
+}
+
+.login-button-admin:hover {
+    background-color: #737f88;
+    transform: scale(1.05);
+}
+
+.login-button-manager:hover {
+    background-color: #ffe8cb;
+    transform: scale(1.05);
+}
+
+.initiallogin-image {
+    width: 400px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.login-button p {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Admin용 다크 테마 */
+.admin-login {
+    font-family: 'loginfont', sans-serif;
+    background-color: #2e3b45;
+    width: 100vw;
+    height: 100vh;
+}
+
+.admin-login .login-box {
+    border: solid 5px white;
+    background-color: #2e3b45;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.admin-login .login-box h2 {
+    margin-bottom: 20px;
+}
+
+.admin-login .login-box input {
+    background-color: #3a4149;
+    color: white;
+    border: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 4px;
+}
+
+.admin-login .login-box input:focus {
+    border-color: #d080ff;
+    outline: none;
+}
+
+.admin-login .login-box button {
+    background-color: #525c68;
+    font-family: 'loginfont', sans-serif;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.admin-login .login-box button:hover {
+    background-color: #d080ff;
+}
+
+/* Manager용 라이트 테마 */
+.manager-login {
+    font-family: 'loginfont', sans-serif;
+    background-color: #fff9f1;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.manager-login .login-box {
+    border: solid 5px #2e3b45;
+    background-color: #fff9f1;
+    color: #2e3b45;
+    padding: 20px;
+    border-radius: 8px;
+    width: 450px;
+    text-align: center;
+}
+
+.manager-login .login-box input {
+    background-color: #fff9f1;
+    color: black;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 4px;
+}
+
+.manager-login .login-box input:focus {
+    border-color: #d080ff;
+    outline: none;
+}
+
+.manager-login .login-box button {
+    background-color: #ffebd1;
+    font-family: 'loginfont', sans-serif;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.manager-login .login-box button:hover {
+    background-color: #d080ff;
+}
+
+.store-sel-title {
+    font-family: initalloginfont;
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.store-info {
+    font-family: 'storeselect';
+}
+
+.store-button {
+    background-color: #f7d5cd !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.store-button:hover {
+    background-color: #fcf4f2 !important;
+}
+
+
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.store-name {
+    font-family: 'MaplestoryOTFBold';
+    font-size: 23px;
+    color: black;
+}

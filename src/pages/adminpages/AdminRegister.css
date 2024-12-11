@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'loginfont';
+    src: url('../../assets/fonts/loginfont.otf') format('truetype');
+}
+
+/* 로고 이미지 */
+.login-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 60%;
+    height: 60%;
+}
+
+/* 공통 스타일 */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.manager-register {
+    font-family: 'loginfont', sans-serif;
+    background-color: #d1fff7;
+    color: black;
+    width: auto;
+    height: 95vh;
+}
+
+.manager-register .login-box {
+    border: solid 5px #2e3b45;
+    background-color: #f1fff7;
+    color: #2e3b45;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.manager-register .login-box input {
+    background-color: #fff9f1;
+    color: black;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 4px;
+}
+
+.manager-register .login-box input:focus {
+    border-color: #d080ff;
+    outline: none;
+}
+
+.manager-register .login-box button {
+    background-color: #ffebd1;
+    font-family: 'loginfont', sans-serif;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.register-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.manager-register .login-box button:hover {
+    background-color: #d080ff;
+}

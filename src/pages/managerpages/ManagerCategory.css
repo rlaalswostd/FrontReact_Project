@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 카테고리 목록 폰트 수정 */
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.category-con{
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+.category-title{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.fa-bookmark{
+    color: green;
+}
+
+.category-list{
+    font-size: 30px;
+}
+
+.cate-num{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.cate-num1{
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0; 
+    background-color: #fff3f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: 'Paperlogy-8ExtraBold', sans-serif !important; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.cate-num1:hover {
+    transform: translateY(-5px); /* 살짝 위로 올라감 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* 그림자 강화 */
+}
+.cate-num1 span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+
+.catebtn{
+    padding-left: 40px;
+}
+
+.catebtn-upd{
+    background-color: #007bff;
+    margin-right: 5px;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    
+}
+
+.catebtn-upd:hover{
+    background-color: #0056b3;
+}
+
+.catebtn-del{
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.catebtn-del:hover{
+    background-color: #c00000;
+}
+
+/* 수정 */
+.cate-edit-form{
+    display: flex;
+    padding-top: 15px;
+    padding-left: 25px;
+    border-radius: 8px;
+}
+
+.cate-edit{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.cate-edit:focus{
+    border-color: #ffbe48;
+}
+
+
+.catebtn-upd2{
+    background-color: #007bff;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.catebtn-upd2:hover{
+    background-color: #0056b3;
+}

@@ -1,0 +1,123 @@
+/* 폰트 저장 */
+@font-face {
+    font-family: 'gongzifont';
+    src: url('../../assets/fonts/gongzifont.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gongzibasic';
+    src: url('../../assets/fonts/gongzibasic.otf') format('truetype');
+}
+
+.ManagerNotice-con {
+    font-family: 'gongzifont';
+    padding: 20px;
+}
+
+.MN-title,
+.MN-nothing {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 40px;
+} 
+
+/* 공지사항 카드 */
+.ant-card {
+    border-radius: 15px; 
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative; 
+    width: 80%; 
+    transition: transform 0.2s ease-in-out; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.ant-card:hover {
+    transform: translateY(-5px); /* hover 시 카드가 위로 살짝 올라가는 효과 */
+}
+
+.ant-card h3 {
+    font-size: 22px;
+    color: #333333; /* 제목 텍스트 색상 */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.noticedate {
+    font-size: 15px;
+    padding-top: 10px;
+    color: gray;
+}
+
+.noticetitle {
+    font-size: 30px;
+    font-family: 'gongzifont';
+    width: 70%;
+    /* 밑줄 제거 */
+    /* border-bottom: 1px solid gray; */
+}
+
+.fa-clone {
+    color: red;
+}
+
+.noticecontent {
+    font-size: 25px;
+    font-family: 'gongzibasic';
+    padding-top: 10px;
+}
+
+.noticegongzi1 {
+    font-size: 20px;
+    font-family: 'gongzifont';
+    border: 0.5px solid rgb(218, 218, 218);
+    background-color: #ffbe48;
+    color: white;
+    display: inline-block; 
+    padding: 5px 18px; 
+    position: absolute;
+    top: 0; 
+    transform: translateX(-50%); 
+    border-radius: 10px; 
+    z-index: 1; 
+}
+
+/* 새 공지사항 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        background-color: #f0f8ff;
+    }
+    to {
+        opacity: 1;
+        background-color: white;
+    }
+}
+.noticemodal-total{
+    width: 60% !important;
+    max-width: 1200px; 
+    max-width: 60%;
+    
+}
+.noticemodal{
+    font-family: 'gongzifont';
+    text-align: center;
+    font-size: 22px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.noticemodalcon {
+    font-family: SCDream5;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+

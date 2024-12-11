@@ -1,0 +1,252 @@
+/* 폰트 저장 */
+@font-face {
+    font-family: 'modalfont';
+    src: url('../../assets/fonts/modalfont.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'managerordersfont';
+    src: url('../../assets/fonts/managerordersfont.otf') format('truetype');
+}
+
+/* ManagerCategoryNew.css */
+
+.MCN-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.MCN-main {
+    font-family: 'managerordersfont';
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 카테고리 등록 박스 */
+.MCN-form {
+    font-family: 'managerordersfont';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffdcdc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 메뉴등록 박스 */
+.MCN-form2 {
+    font-family: 'managerordersfont';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #dcffee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.MCN-form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.MCN-image-group{
+    display: flex;
+    align-items: center; /* 레이블과 버튼을 세로로 중앙 정렬 */
+    gap: 10px; /* 라벨과 버튼 간 간격 */
+    line-height: 1.5; /* 입력창의 줄 간격 */
+}
+
+.MCN-label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.Menu-image{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.MCN-input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* 메뉴등록 체크박스 */
+.MCN-check {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.MCN-input-check {
+    width: 20px; 
+    vertical-align: middle; 
+    margin-right: 16px;
+    height: 20px; 
+    border: 1px solid #ddd;
+    gap: 8px !important;
+    border-radius: 4px;
+    cursor: pointer; 
+    transform: scale(1.5); 
+    font-weight: bold;
+    font-size : 25px !important;
+}
+
+.MCN-input-check:checked {
+    background-color: #007bff; /* 체크된 상태의 배경색 */
+    border-color: #007bff; /* 체크된 상태의 테두리 색 */
+}
+/* ===================== */
+
+/* 카테고리 */
+.MCN-button {
+    font-family: 'modalfont';
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.MCN-button:hover {
+    background-color: #0056b3;
+}
+
+/* 메뉴등록 */
+.MCN-button2 {
+    font-family: 'modalfont';
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff0095;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.MCN-button2:hover {
+    background-color: #c20071;
+}
+
+.MCN-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.MCN-message {
+    margin-top: 15px;
+    font-family: 'managerordersfont';
+    font-size: 30px;
+}
+
+.MCN-message.error {
+    color: red; /* 오류 메시지: 빨간색 */
+}
+
+
+.MCN-label {
+    display: block;
+    margin-bottom: 10px; /* 버튼과의 간격 조정 */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.file-label {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.file-label:hover {
+    background-color: #0056b3; /* 버튼 호버 효과 */
+}
+
+.file-input {
+    display: none; /* 기본 파일 입력 숨김 */
+}
+
+.file-status {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #555;
+    line-height: 1.5; /* 파일 상태 텍스트 줄 간격 */
+}
+
+.custom-select {
+    font-family: 'managerordersfont';
+    width: 93%;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    appearance: none; /* 기본 브라우저 스타일 제거 */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.custom-select:hover {
+    cursor: pointer;
+    background-color: #fffcf3; /* 마우스 오버 시 배경색 변경 */
+}
+
+.custom-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.MMN-success{
+    font-family: 'managerordersfont';
+    font-size: 30px;
+}
+
+.display-orders-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.display-order-item {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(10% - 10px); /* 한줄에 5개씩 */
+}
+

@@ -1,0 +1,52 @@
+.error-con {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
+}
+
+.errorimage {
+    max-width: 200px; /* 이미지 최대 너비 설정 */
+    height: auto; /* 비율 유지 */
+    object-fit: cover; /* 이미지 잘림 방지 */
+}
+
+.error-content {
+    display: flex;
+    flex-direction: column; /* 텍스트와 버튼을 세로로 배치 */
+    justify-content: center; /* 세로 정렬 가운데 */
+    gap: 10px; /* 각 항목 사이 간격 */
+}
+
+.error-title {
+    font-family: managerordersfont;
+    text-align: left;
+    font-size: 42px;
+    color: #333;
+}
+
+.error-text {
+    font-family: SCDream5;
+    text-align: left;
+    font-size: 16px;
+    color: #666;
+}
+
+.errorback {
+    font-family: gongzifont;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff0000; /* 버튼 색상 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.errorback:hover {
+    background-color: #9e0000; /* 호버 효과 */
+}

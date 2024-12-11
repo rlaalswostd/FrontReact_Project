@@ -1,0 +1,266 @@
+/* 폰트 저장 */
+@font-face {
+    font-family: 'modalfont';
+    src: url('../../assets/fonts/modalfont.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'managerordersfont';
+    src: url('../../assets/fonts/managerordersfont.otf') format('truetype');
+}
+
+/* 모달 전체 배경 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-family: 'managerordersfont';
+}
+
+/* 모달 내부 컨텐츠 */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+}
+
+/* 모달 내용의 본문 */
+.modaltbody {
+    font-size: 30px;
+    padding: 100px;
+}
+
+/* 모달 버튼 */
+.modalbutton {
+    padding: 15px 50px;
+    margin-top: 20px;
+    background-color: rgb(0, 112, 163);
+    color: white;
+    font-family: 'modalfont';
+}
+
+/* 모달 버튼 호버 효과 */
+.modalbutton:hover {
+    background-color: rgb(47, 189, 255);
+}
+
+/* 모달 테이블 스타일 */
+.modalmenutb th {
+    text-align: center;
+}
+
+/* 첫 번째 열 너비 */
+.modalmenutb th:first-child {
+    width: 15%;
+}
+
+/* 두 번째 열 너비 */
+.modalmenutb th:nth-child(2) {
+    width: 85%;
+}
+
+.store-id-display{
+    display: none;
+}
+
+/* 전체 주문 보기 스타일 */
+.ordermain {
+    font-size: 50px;
+    font-family: 'managerordersfont';
+    padding: 30px;
+    text-align: center;
+}
+
+/* 주문 테이블 스타일 */
+.order-table {
+    font-family: 'managerordersfont';
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+/* 테이블 셀 스타일 */
+.order-table th,
+.order-table td {
+    padding: 20px;
+    border: none;
+}
+
+/* 첫 번째 줄 스타일 */
+.order-table th.type-column {
+    width: 10%;
+}
+
+/* 테이블 번호 칸 스타일 */
+.order-table th.table-number-column {
+    width: 20%;
+}
+
+/* 첫 번째 줄 배경 및 글꼴 스타일 */
+.order-table thead tr {
+    background-color: skyblue;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+/* 첫 번째 칸 스타일 */
+.order-table td:first-child {
+    height: auto;
+    width: auto;
+}
+
+/* 두 번째 열 스타일 */
+.order-table td:nth-child(2) {
+    height: auto;
+    font-size: 25px;
+}
+
+/* 세 번째 열 스타일 */
+.order-table td:nth-child(3) {
+    font-size: 30px;
+}
+
+/* 네 번째 열 스타일 */
+.order-table td:nth-child(4) {
+    width: auto;
+    font-size: 30px;
+}
+
+/* 테이블 셀 간격 */
+.order-table td {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* 테이블 셀 및 헤더 글자 크기 */
+.order-table td,
+.order-table th {
+    font-size: 12pt;
+}
+
+/* 테이블 번호 박스 스타일 */
+.table-number-box {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 450px;
+    height: 60px;
+}
+
+
+/* 상세보기 버튼 스타일 */
+.bigobutton {
+    font-size: 16pt;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'modalfont';
+}
+
+/* 상세보기 버튼 호버 효과 */
+.bigobutton:hover {
+    background-color: #FFD700;
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* 페이지네이션 버튼 스타일 */
+.pagination button {
+    margin: 0 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 페이지네이션 버튼 호버 효과 */
+.pagination button:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* 활성화된 페이지 버튼 스타일 */
+.pagination .active {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4CAF50;
+}
+
+/* 반응형 디자인 - 화면 너비 600px 이하일 때 */
+@media (max-width: 600px) {
+    .pagination button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+/* 오늘 날짜 스타일 */
+.today-date {
+    font-size: 25px;
+    color: #333;
+    margin-right: 20px;
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+}
+
+/* "전체 주문 보기" 스타일 */
+.ordermain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* "오늘 날짜"와 "전체 주문 보기" 분리 */
+.ordermain>div:nth-child(1) {
+    font-size: 25px;
+    font-weight: normal;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* "전체 주문 보기" 크기 및 간격 */
+.ordermain>div:nth-child(2) {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+/* 주문 없을 때 텍스트 스타일 */
+.no-orders {
+    font-size: 20px;
+    font-weight: bold;
+}

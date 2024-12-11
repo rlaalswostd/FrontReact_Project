@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'loginfont';
+    src: url('../../assets/fonts/loginfont.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.admin-shop-container {
+    font-family: 'loginfont';
+    max-width: 550px;
+    margin: 35px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-shop-title {
+    font-family: 'ONE-Mobile-POP';
+    text-align: center;
+    color: #333;
+    margin: 20px;
+    font-size: 50px;
+}
+
+.admin-shop-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.admin-shop-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.admin-shop-field-checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.admin-shop-field-select{
+    width: 79% !important;
+}
+
+.checkbox-width{
+    width: 15px; /* 너비 조정 */
+    height: 15px; /* 높이 조정 */
+    transform: scale(1.5); /* 비율 조정 */
+    margin-left: 10px; 
+}
+
+
+.admin-shop-field label {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.admin-shop-field input,
+.admin-shop-field select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 75%;
+}
+
+.admin-shop-field-checkbox label {
+    display: inline;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.admin-shop-field-checkbox input {
+    margin-left: 10px;
+}
+
+.admin-shop-button {
+    font-family: 'GmarketSansMedium';
+    padding: 12px;
+    background-color: #ffbe48;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-shop-button:hover {
+    background-color: #dba43e;
+}
+
+.admin-shop-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ff0000;
+}

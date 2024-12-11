@@ -1,0 +1,61 @@
+/* 폰트 저장 */
+@font-face {
+  font-family: 'SCDream5';
+  src: url('../assets/fonts/SCDream5.otf') format('truetype');
+}
+
+/* src/components/AdminSidebar.css */
+.admin-sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  font-family: 'SCDream5', sans-serif;
+}
+
+.admin-sidebar ul {
+  color: white;
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  margin: 10px 0;
+  padding-bottom: 5px;
+}
+
+.admin-sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-logo {
+  width: 100%;
+}
+
+/* 로그아웃 버튼 */
+.logout-button {
+  font-family: 'SCDream5', sans-serif;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.logout-button:hover {
+  background-color: #c9302c;
+}
+
+.admin-sidebar li.active a {
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+  background-color: #ffbe48;
+  border-radius: 5px; 
+  padding: 8px 30px 8px 8px;
+  z-index: 1;
+}

@@ -1,0 +1,15 @@
+/* src/App.css */
+
+/* 전체 레이아웃 스타일 */
+.app {
+  display: flex;
+  background-color: #3a4149;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  color: white;
+  flex: 1;
+  padding: 20px;
+}

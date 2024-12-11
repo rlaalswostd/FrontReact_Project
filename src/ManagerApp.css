@@ -1,0 +1,16 @@
+/* src/ManagerApp.css */
+
+/* 전체 레이아웃 스타일 */
+.Managerapp {
+    display: flex;
+    background-color: #fff9f1;
+    height: 100vh;
+    width: 100%;
+}
+
+.Managercontent {
+    color: black;
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+}

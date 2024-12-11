@@ -1,0 +1,16 @@
+/* src/AdminApp.css */
+
+/* 전체 레이아웃 스타일 */
+.Adminapp {
+    display: flex;
+    background-color: #3a4149;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Admincontent {
+    color: white;
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+}

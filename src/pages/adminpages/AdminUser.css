@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'MinSans-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 테이블 스타일 */
+.user-admin-container {
+    font-family: 'MinSans-Regular';
+    letter-spacing: -1px;
+}
+
+.user-title {
+    font-family: 'ONE-Mobile-POP';
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    -webkit-text-stroke: 0.5px #ffbe48;
+}
+
+.user-table {
+    width: 99%;
+    border-collapse: collapse;
+    /* 테이블 셀의 경계가 겹치지 않도록 설정 */
+}
+
+.user-table-thead {
+    font-size: 20px;
+}
+
+/* 테이블의 헤더 셀과 데이터 셀 스타일 */
+.user-table th,
+.user-table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* 테이블 헤더의 스타일 */
+.user-table th {
+    background-color: #ffbe48;
+    /* 배경색  */
+    color: white;
+    /* 텍스트 색상  */
+}
+
+/* 테이블 행 스타일 */
+.user-table tr {
+    border-bottom: 1px solid #ddd;
+    /* 각 행 아래에 얇은 회색 선 추가 */
+}
+
+
+.user-table td:nth-child(2) {
+    font-weight: bold;
+    /* 글자 두껍게 */
+    padding-left: 0px;
+    /* 셀 내부 여백 */
+    width: 35% !important;
+}
+
+.user-table td:nth-child(3) {
+    text-align: left;
+}
+
+
+.user-table-tbody-storename {
+    text-align: left !important;
+    font-size: 18px;
+}
+
+
+
+/* 페이지네이션 버튼 스타일 */
+.user-pagination {
+    margin-top: 20px;
+    /* 페이지네이션 버튼 위쪽 여백 설정 */
+    text-align: center;
+    /* 버튼들을 중앙 정렬 */
+}
+
+/* 페이지네이션 버튼의 스타일 */
+.user-pagination button {
+    margin: 0 5px;
+    /* 양쪽 여백 */
+    padding: 10px;
+    /* 패딩 */
+    border: 1px solid #ccc;
+    /* 테두리 */
+    border-radius: 5px;
+    /* 둥근 모서리 */
+    background-color: #f9f9f9;
+    /* 배경색 */
+    color: #333;
+    /* 글자 색상 */
+    font-size: 14px;
+    /* 글자 크기 */
+    cursor: pointer;
+    /* 커서 포인터 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* 호버 효과 */
+}
+
+/* 비활성화된 페이지네이션 버튼 스타일 */
+.user-pagination button:disabled {
+    cursor: not-allowed;
+    /* 마우스 커서가 비활성화된 버튼 위에 올려지면 클릭할 수 없다는 느낌을 줌 */
+    background-color: #6d6d6d;
+    /* 비활성화된 버튼 배경색을 회색으로 설정 */
+}
+
+/* 페이지네이션의 페이지 번호 텍스트 스타일 */
+.user-pagination span {
+    margin: 0 10px;
+    /* 페이지 번호 간 간격 설정 */
+}
+
+.user-pagination button:enabled {
+    background-color: #ffbe48;
+    /* 배경색 */
+    color: white;
+    /* 글자 색상 */
+    font-weight: bold;
+    /* 글꼴 굵게 */
+    border: 1px solid #fff;
+    /* 테두리 */
+}
+
+/* 페이지네이션 버튼 호버 효과 */
+.user-pagination button:enabled:hover {
+    background-color: #c59438;
+    /* 배경색 변화 */
+    color: #fff;
+    /* 글자 색상 변화 */
+}
+
+/* 계약 상태 스타일 */
+.expired-status {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.active-status {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'KOTRA_BOLD-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dashboard-color-guide {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-warning {
+    font-family: 'KOTRA_BOLD-Bold';
+    color: rgb(226, 71, 200);
+    font-weight: bold;
+}
+.dashboard-danger {
+    font-family: 'KOTRA_BOLD-Bold';
+    color: rgb(255, 126, 126);
+    font-weight: bold;
+}
+
+
+/* 수정 모달 스타일 */
+.dashboard-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    /* 모달 너비 */
+    max-width: 600px;
+    /* 최대 너비 */
+    z-index: 1000;
+}
+
+/* 입력 필드 스타일 */
+.dashboard-modal label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #555;
+}
+
+.dashboard-modal input,
+.dashboard-modal select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* 수정 버튼 스타일 */
+.dashboard-modal button {
+    padding: 12px 20px;
+    background-color: #ffbe48;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    /* 버튼 간 간격 */
+}
+
+.dashboard-modal button:hover {
+    background-color: #c59438;
+}
+
+/* 취소 버튼 스타일 */
+.dashboard-modal button:last-child {
+    background-color: #ccc;
+    color: #333;
+}
+
+.dashboard-modal button:last-child:hover {
+    background-color: #aaa;
+}
+
+/* 수정 버튼 테이블 스타일 */
+.user-table button {
+    padding: 10px 20px;
+    background-color: #ffbe48;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-table button:hover {
+    background-color: #c59438;
+}
+
+/* 취소 버튼 스타일 */
+.modal button.cancel-btn {
+    background-color: #ccc;
+    color: #333;
+}
+
+.modal button.cancel-btn:hover {
+    background-color: #aaa;
+}
+
+/* 배경 어두운 스타일 (모달 외부 클릭 방지) */
+.dashboard-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.dashboard-modal-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dashboard-modal-title {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-family: 'ONE-Mobile-POP';
+}
+
